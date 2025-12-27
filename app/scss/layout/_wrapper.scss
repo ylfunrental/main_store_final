@@ -1,0 +1,12 @@
+/*Undersocre is to tewll scss that file is a prtial and to not convert it into its own css file*/
+@use "../util" as u;
+
+.wrapper {
+  width: min(100% - u.rem(48), u.rem(1200));
+  margin-inline: auto;
+  padding-block: 60px; //why not work
+
+  @include u.breakpoint(large) {
+    padding-block: 80px;
+  }
+}

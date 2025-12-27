@@ -1,0 +1,58 @@
+@use "../util" as u;
+
+.hero {
+  background-color: var(--hero-bg);
+  color: var(--text-light);
+
+  &__wrapper {
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-block: 30px 60px;
+    gap: 40px;
+
+    @include u.breakpoint(large) {
+      padding-block: 40px 80px;
+      //flex-direction: row-reverse;
+      grid-template-columns: 6fr 5fr;
+
+      gap: 10%;
+    }
+  }
+
+  &__image {
+    width: 61%;
+    max-width: u.rem(483);
+    //margin-block-end: u.rem(40);
+    //width: u.rem(200);
+    //@include u.breakpoint(large) {
+    //  width: u.rem(483);
+    //}
+
+    @include u.breakpoint(large) {
+      //flex: 5;
+      order: 2;
+      width: 100%; //for grid desktop layout
+    }
+  }
+
+  &__text {
+    @include u.breakpoint(large) {
+      //flex: 6;
+    }
+  }
+
+  &__title {
+  }
+  &__content {
+  }
+  &__button {
+    &:first-of-type {
+      margin-inline-end: 20px;
+    }
+  }
+}

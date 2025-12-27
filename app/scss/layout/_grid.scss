@@ -1,0 +1,94 @@
+/*Undersocre is to tewll scss that file is a prtial and to not convert it into its own css file*/
+@use "../util" as u;
+
+//%widget {
+//padding: u.rem(16);
+//}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto; /*1st row 2nd row*/
+  gap: u.rem(40);
+  //max-width: 1000px;
+  width: min(100% - u.rem(40), u.rem(1000));
+
+  //margin: 0 auto;
+  margin-inline: auto;
+
+  //padding-left: 20px;
+  //padding-right: 20px;
+
+  font-size: 2rem;
+
+  @include u.breakpoint(large) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  /*@media (min-width: 900px) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    //padding-left: 0;
+    //padding-right: 0;
+  }*/
+
+  &__main,
+  &__sidebar {
+    padding: u.rem(40);
+  }
+
+  &__main {
+    //background-color: hsl(240, 98%, 37%);
+    //order of media queries matters, cascade
+    //@include u.breakpoint(medium) {
+    //background-color: hsl(120, 100%, 20%);
+    //}
+    //@include u.breakpoint(large) {
+    //background-color: hsl(39, 100%, 31%);
+    //}
+    //prev overriden
+    //@include u.breakpoint(large) {
+    // background-color: hsl(6, 100%, 28%);
+    //}
+  }
+
+  &__sidebar {
+    //text-align: center;
+
+    /*@include u.breakpoint(large) {
+      text-align: left;
+    }*/
+
+    /*@media (max-width: 56.25em) {
+      text-align: center;
+    }*/
+    @include u.breakpoint-down(medium) {
+      text-align: center;
+    }
+    @include u.breakpoint-down(small) {
+      text-align: right;
+    }
+  }
+
+  &__widget {
+    //$widget: &; //this which becomes .grid__widget
+    //background-color: hsl(300, 100%, 30%);
+    padding: u.rem(16);
+
+    //&.magenta {
+    //@extend %widget;
+    //  background-color: hsl(300, 100%, 30);
+    //}
+
+    //&.green {
+    //@extend %widget; //#{$widget}; //.grid__widget; inherit the parent class attributes in this case
+    //  background-color: hsl(120, 100%, 27%);
+    //}
+  }
+}
+
+/*BEM Block ELement Modifier
+block design concept
+Elelmtns for blocks
+Modifirers are alternate versions*/
