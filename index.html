@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Y&L Fun Rental</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
@@ -24,13 +24,13 @@
   </head>
   <body>
     <a class="visually-hidden" href="#main">Skip to main content</a>
-    <header class="topnav" style="background-color: rgb(35, 35, 46);">
+    <header id="navigation" class="topnav">
       <h2 class="visually-hidden">Header</h2>
       <div class="wrapper topnav__wrapper" >
-        <a href="/" class="topnav__homelink hover-fade">
+        <a href="#navigation" class="topnav__homelink hover-fade">
           <img
-            src="/img/Y__L_FUN_RENTAL_LOGO.png"
-            alt="Mythos homepage"
+            src="/img/Y_L_FUN_RENTAL_LOGO.png"
+            alt="Y&L Fun Rental homepage"
             class="topnav__logo"
             width="128"
             height="36"
@@ -53,20 +53,16 @@
     </header>
     <main id="main">
       <article>
-        <section class="hero" style="background-image: url(./img/IMG_5113.jpg); background-size: cover;">
+        <section class="hero hero__carousel">
           <div class="wrapper hero__wrapper">
             <div class="hero__image">
-              <img
-                src="/img/Y__L_FUN_RENTAL_LOGO.png"
-                alt="unicorn with stars"
-                width="483"
-                height="486"
-              />
+              <div class="hero__container"></div>
+              
             </div>
             <div class="hero__text">
               <h1 class="hero__title">Y&L Fun Rentals</h1>
               <p class="hero__content large">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates reprehenderit.
+                Unbeatable prices call or text for bookings TODAY
               </p>
               <a href="#rentals" class="hero__button button primary">Rentals</a>
               <a href="#contact" class="hero__button button secondary">Contact</a>
@@ -75,75 +71,84 @@
         </section>
         <section id="rentals" class="features">
           <h2 class="visually-hidden">Features</h2>
+          <div class="features__header">
+              <h2>Rentals</h2>
+            </div>
           <div class="wrapper features__wrapper">
+            
             <div class="features__item">
-              <img
+              <div class="features__icon__container"><img
                 src="/img/IMG_2876001_chair.jpg"
-                alt=""
+                alt="An unfolded chair"
                 width="43"
                 height="48"
                 class="features__icon"
-              />
+              /></div>
+              
               <h3 class="features__title">Chairs</h3>
               <p class="features__description">
-                Phasellus ac mi magna. Sed scelerisque, turpis vitae consequat
-                vehicula, sem turpis pretium tellus, tempor posuere turpis est
-                ac velit.
+                Standard foldable Duramax chairs.
               </p>
             </div>
             <div class="features__item">
-              <img
+              <div class="features__icon__container"><img
                 src="/img/IMG_2877001_table.JPG"
-                alt=""
+                alt="An unfolded table"
                 width="41"
                 height="48"
                 class="features__icon"
-              />
+              /></div>
+              
               <h3 class="features__title">Tables</h3>
               <p class="features__description">
-                Mauris id vestibulum metus, ut pretium lacus. Phasellus ac mi
-                magna. Sed scelerisque, turpis vitae consequat vehicula, sem
-                turpis pretium tellus, tempor posuere turpis est ac velit.
+                White 6 ft Duramax tables with options of tablecloth.
               </p>
             </div>
             <div class="features__item">
-              <img
+              <div class="features__icon__container"><img
                 src="/img/IMG_2878001_tent.jpg"
-                alt=""
+                alt="A white tent"
+                width="60.57"
+                height="48"
+                class="features__icon"
+              /></div>
+              
+              <h3 class="features__title">Tents</h3>
+              <p class="features__description">
+                Various size white tents with optional draping of party colors.
+              </p>
+            </div>
+            <div class="features__item">
+              <div class="features__icon__container">
+                <img
+                src="/img/IMG_2997_Bubble_House.jpg"
+                alt="A transparent bubble house"
                 width="60.57"
                 height="48"
                 class="features__icon"
               />
-              <h3 class="features__title">Tents</h3>
+              </div>
+              
+              <h3 class="features__title">Bubblehouse</h3>
               <p class="features__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                id vestibulum metus, ut pretium lacus.
+                Clear bubble house with added on balloon decorations.
               </p>
             </div>
           </div>
         </section>
-        <section id="contact" class="fw-feature fullwidth" style="background-color: rgb(243, 123, 243);">
+        <section id="contact" class="fw-feature fullwidth">
           <div class="wrapper fw-feature__wrapper">
             <h2 class="fw-feature__title">
               Contact Us
             </h2>
             <h3>(714)552-6943</h3>
-            <p class="fw-feature__description fullwidth__description medium" style="white-space: pre-line;">
+            <p class="fw-feature__description fullwidth__description medium">
               Monday - Friday: 9:00 AM to 8:00 PM
               Saturday - Sunday: 8:30 AM to 7:30 PM
             </p>
-            <!--<img
-                src="/img/laptop-dashboard.svg"
-                alt="open laptop showing a dashboard on the screen"
-                width="792"
-                height="465"
-              />
-            </div>-->
-            <div class="fw-feature__image">
-              
-          </div>
+
         </section>
-        <section id="about" class="fw-feature fullwidth" style="background-color: rgb(80, 80, 219);">
+        <section id="about" class="fw-about fullwidth">
           <div class="wrapper fw-feature__wrapper">
             <h2 class="fw-feature__title">
               About Us
@@ -152,101 +157,33 @@
           <div class="wrapper testimonial__wrapper">
             <figure>
               <div class="testimonial__icon">
-                <img
-                  src="/img/quotation-mark-teal.svg"
-                  alt=""
-                  width="78"
-                  height="66"
-                />
+                <svg width="78" height="66" viewBox="0 0 78 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.8829 66C11.922 66 7.41951 63.8319 4.37561 59.4957C1.45854 55.0319 0 48.8463 0 40.9391C0 31.8841 2.21951 23.913 6.65854 17.0261C11.0975 10.1391 17.8829 4.46377 27.0146 0L33.1024 12.2435C27.3951 15.1768 23.0829 18.5565 20.1659 22.3826C17.3756 26.0811 15.9805 30.8 15.9805 36.5391C16.361 36.4116 16.9951 36.3478 17.8829 36.3478C21.9414 36.3478 25.3658 37.6232 28.1561 40.1739C31.0731 42.5971 32.5317 45.9768 32.5317 50.313C32.5317 55.1594 31.1366 58.9855 28.3463 61.7913C25.5561 64.5971 22.0683 66 17.8829 66ZM62.7805 66C56.8195 66 52.3171 63.8319 49.2732 59.4957C46.3561 55.0319 44.8976 48.8463 44.8976 40.9391C44.8976 31.8841 47.1171 23.913 51.5561 17.0261C55.9951 10.1391 62.7805 4.46377 71.9122 0L78 12.2435C72.2927 15.1768 67.9805 18.5565 65.0634 22.3826C62.2731 26.0811 60.8781 30.8 60.8781 36.5391C61.2585 36.4116 61.8927 36.3478 62.7805 36.3478C66.839 36.3478 70.2634 37.6232 73.0537 40.1739C75.9707 42.5971 77.4293 45.9768 77.4293 50.313C77.4293 55.1594 76.0342 58.9855 73.2439 61.7913C70.4536 64.5971 66.9659 66 62.7805 66Z" fill="#F5C255"/>
+</svg>
               </div>
               <blockquote>
                 <p class="testimonial__quote">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos aliquid laboriosam ratione itaque quia excepturi repellat odit consequuntur impedit, tenetur fuga ducimus autem aut neque doloremque similique veniam enim saepe.
+                  As a women-owned party rental service, we're redefining celebrations with quality rentals at unbeatable prices. We believe partying shouldn't be a luxury-it should be accessible to everyone.
                 </p>
               </blockquote>
               <div class="testimonial__author-wrapper">
                 <div class="testimonial__author">
                   <img
-                    src="/img/author-1x.jpg"
-                    srcset="/img/author-2x.jpg 2x, /img/author-3x.jpg 3x"
-                    alt="headshot of Janice Hsu"
+                    src="/img/IMG_2682_quote_pic_green_orange.JPG"
+                    alt="headshot of Yamilet Padilla & Lucy Gonzalez"
                     style="border-radius: inherit"
                   />
                 </div>
                 <figcaption class="testimonial__author-caption">
                   <p class="medium testimonial__author-description">
-                    Janice Hsu<br />
-                    Founder and CEO, Evermindly
+                    Yamilet Padilla & Lucie Gonzalez<br />
+                    CEOs, Y&L Fun Rental
                   </p>
                 </figcaption>
               </div>
             </figure>
           </div>
-            <!--<img
-                src="/img/laptop-dashboard.svg"
-                alt="open laptop showing a dashboard on the screen"
-                width="792"
-                height="465"
-              />
-            </div>-->
-            <div class="fw-feature__image">
-              
-          </div>
-          
         </section>
-
-        <!--<section class="testimonial">
-          <h2 class="visually-hidden">Testimonial</h2>
-          <div class="wrapper testimonial__wrapper">
-            <figure>
-              <div class="testimonial__icon">
-                <img
-                  src="/img/quotation-mark-teal.svg"
-                  alt=""
-                  width="78"
-                  height="66"
-                />
-              </div>
-              <blockquote>
-                <p class="testimonial__quote">
-                  When I first started Evermindly, it was a bootstrapped
-                  business. However, we were quickly running out of money.
-                  Thanks to Mythos, we were matched with investors for our seed
-                  funding and now have secured a Series A round!
-                </p>
-              </blockquote>
-              <div class="testimonial__author-wrapper">
-                <div class="testimonial__author">
-                  <img
-                    src="/img/author-1x.jpg"
-                    srcset="/img/author-2x.jpg 2x, /img/author-3x.jpg 3x"
-                    alt="headshot of Janice Hsu"
-                    style="border-radius: inherit"
-                  />
-                </div>
-                <figcaption class="testimonial__author-caption">
-                  <p class="medium testimonial__author-description">
-                    Janice Hsu<br />
-                    Founder and CEO, Evermindly
-                  </p>
-                </figcaption>
-              </div>
-            </figure>
-          </div>
-        </section>-->
-        <!--
-        <section class="fw-cta fullwidth">
-          <div class="wrapper fw-cta__wrapper">
-            <h2 class="fw-cta__title">Get started with Mythos today.</h2>
-            <p class="fw-cta__description fullwidth__description large">
-              Find the next undiscovered unicorn with a free 14-day trial.
-            </p>
-            <a href="" class="fw-cta__button button primary white"
-              >Free trial</a
-            >
-          </div>
-        </section>
-        -->
         
       </article>
     </main>
@@ -254,16 +191,16 @@
       <h2 class="visually-hidden">Footer</h2>
       <div class="footer__wrapper wrapper">
         <section class="footer__logo">
-          <a href="/" class="footer__homelink hover-fade">
+          <a href="#navigation" class="footer__homelink hover-fade">
           <img
-            src="/img/Y__L_FUN_RENTAL_LOGO.png"
-            alt="Mythos homepage"
+            src="/img/Y_L_FUN_RENTAL_LOGO.png"
+            alt="Y&L Fun Rental homepage"
             class="footer__logo-image"
             width="128"
             height="36"
           />
         </a>
-        <p class="footer__copyright">&#169 2025 Y&L Fun Rental</p>
+        <p class="footer__copyright">&#169 2026 Y&L Fun Rental</p>
         </section>
         <section class="footer__column">
           <h3 class="footer__column-title">Company</h3>

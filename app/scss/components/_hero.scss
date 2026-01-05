@@ -1,8 +1,40 @@
 @use "../util" as u;
 
 .hero {
-  background-color: var(--hero-bg);
+  background-color: var(--header-bg);
   color: var(--text-light);
+
+  &__carousel {
+    animation: changeBackground 15s infinite;
+  }
+
+  @keyframes changeBackground {
+    0% {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: cover;
+      background-image: url(../img/red_white_all-in-one.jpg);
+    }
+    33% {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: cover;
+      background-image: url(../img/multi-color_tent.jpg);
+    }
+    66% {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: cover;
+
+      background-image: url(../img/white-pink_tent.jpg);
+    }
+    100% {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: cover;
+      background-image: url(../img/red_white_all-in-one.jpg);
+    }
+  }
 
   &__wrapper {
     //display: flex;
@@ -22,6 +54,13 @@
 
       gap: 10%;
     }
+
+    @include u.breakpoint(medium) {
+      padding-block: 40px 80px;
+      grid-template-columns: 6fr 5fr;
+
+      gap: 10%;
+    }
   }
 
   &__image {
@@ -37,6 +76,37 @@
       //flex: 5;
       order: 2;
       width: 100%; //for grid desktop layout
+    }
+
+    @include u.breakpoint(medium) {
+      //flex: 5;
+      order: 2;
+      width: 61%; //for grid tablet layout
+    }
+  }
+
+  &__container {
+    width: 61%;
+    height: 243px;
+    max-width: u.rem(483);
+    //margin-block-end: u.rem(40);
+    //width: u.rem(200);
+    //@include u.breakpoint(large) {
+    //  width: u.rem(483);
+    //}
+
+    @include u.breakpoint(large) {
+      //flex: 5;
+      order: 2;
+      width: 483px;
+      height: 486px; //for grid desktop layout
+    }
+
+    @include u.breakpoint(medium) {
+      //flex: 5;
+      order: 2;
+      width: 273px;
+      height: 486px; //for grid tablet layout
     }
   }
 
