@@ -5,30 +5,45 @@
   color: var(--text-light);
 
   &__carousel {
-    animation: changeBackground 15s infinite;
+    animation: changeBackground 20s infinite;
   }
 
   @keyframes changeBackground {
     0% {
+      background-color: rgba(0, 0, 0, 0.25);
+      background-blend-mode: darken;
       background-repeat: no-repeat;
       background-position: right;
       background-size: cover;
       background-image: url(../img/red_white_all-in-one.jpg);
     }
-    33% {
+    25% {
+      background-color: rgba(0, 0, 0, 0.25);
+      background-blend-mode: darken;
       background-repeat: no-repeat;
       background-position: right;
       background-size: cover;
-      background-image: url(../img/multi-color_tent.jpg);
+      background-image: url(../img/IMG_3060_blackwhite_tent.jpg);
     }
-    66% {
+    50% {
+      background-color: rgba(0, 0, 0, 0.25);
+      background-blend-mode: darken;
       background-repeat: no-repeat;
       background-position: right;
       background-size: cover;
-
       background-image: url(../img/white-pink_tent.jpg);
     }
+    75% {
+      background-color: rgba(0, 0, 0, 0.25);
+      background-blend-mode: darken;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: cover;
+      background-image: url(../img/IMG_3064_numbered_blackwhite_tent.jpg);
+    }
     100% {
+      background-color: rgba(0, 0, 0, 0.25);
+      background-blend-mode: darken;
       background-repeat: no-repeat;
       background-position: right;
       background-size: cover;
